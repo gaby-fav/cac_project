@@ -1,27 +1,27 @@
 'use strict'
 
-//  $(document).ready(function(){
+  $(document).ready(function(){
 
-//      $('body').on({'mousemove' : function( e ){
-//          console.clear()
-//          let clientX = e.originalEvent.clientX
-//          let clientY = e.originalEvent.clientY
-//          $('#cursor').css({
-//              'left' : (clientX - 40) + 'px',
-//              'top' : (clientY - 40) + 'px'
-//          })
-//      }})
+      $('body').on({'mousemove' : function( e ){
+          console.clear()
+          let clientX = e.originalEvent.clientX
+          let clientY = e.originalEvent.clientY
+          $('#cursor').css({
+              'left' : (clientX - 40) + 'px',
+              'top' : (clientY - 40) + 'px'
+          })
+      }})
 
-//      $('.a').on({
-//          'mouseover': function(){
-//              $('#cursor').addClass('mini')
-//          },
-//          'mouseout': function(){
-//             $('#cursor').removeClass('mini')
+      $('.a').on({
+          'mouseover': function(){
+              $('#cursor').addClass('mini')
+          },
+          'mouseout': function(){
+             $('#cursor').removeClass('mini')
 
-//          },
-//     })
-//  })
+          },
+     })
+  })
 
  const formulario = document.getElementById('contacto');
  const inputs = document.querySelectorAll('#contacto input');
@@ -87,6 +87,7 @@ const validarCampo = (expresion, input, campo) => {
      e.preventDefault();
      if(campos.name && campos.email && campos.phone){
          formulario.reset();
+
          document.getElementById('message_send_ok').classList.add('message_send_ok_active')
 
      }

@@ -39,7 +39,7 @@ body{
     /* cursor: none; */
 }
 
-/* #cursor{
+#cursor{
     width: 2em;
     height: 2em;
     background-color: white;
@@ -56,7 +56,7 @@ body{
 #cursor.mini{
     transform: scale(0.7);
     transition:all .1s linear ;
-} */
+}
 
 .circulos{
     position: fixed;
