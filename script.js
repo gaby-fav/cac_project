@@ -1,6 +1,6 @@
 'use strict'
 
-  $(document).ready(function(){
+$(document).ready(function(){
 
       $('body').on({'mousemove' : function( e ){
           console.clear()
