@@ -110,8 +110,14 @@ body{
 /* mobiles */
 @media only screen and (max-width: 583px){
     header{
+        margin: 0;
         justify-content: center;
-    }   
+        min-width: 100vh;
+    }
+    
+    .info h2{
+        margin-bottom: 1.5em;
+    }
 }
 
 .header{
@@ -204,6 +210,7 @@ body{
     -webkit-mix-blend-mode: multiply;
     mix-blend-mode: multiply;
 }
+
 
 .exp{
     background: rgba(0,0,0 ,.70);
